@@ -29,6 +29,7 @@
     background-size: cover;
     
     position: relative;
+    width: 100%;
   }
   
   .header::after {
@@ -901,6 +902,7 @@
     background-color: #f4f7f6;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     
     list-style-type: none;
     display: flex;
@@ -950,4 +952,16 @@
     text-decoration: none;
     display: block;  
     text-align: center;
+  }
+
+  @media (min-width: 641px) and (max-width: 1200px) {
+    .social-media {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .social-media {
+      width: 100%;
+    }
   }
